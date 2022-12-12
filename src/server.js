@@ -9,6 +9,7 @@ app.use(express.static(`public`));
 
 // SECTION - Middleware
 app.use(express.json());
+app.use(express.urlencoded({extended: true}));
 
 // View Routes
 app.use('/', viewsRouter);
